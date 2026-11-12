@@ -1,0 +1,782 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#ffffff">
+  <meta name="description" content="Детская клиника «Солнышко» в Екатеринбурге: педиатрия, узкие специалисты, диагностика, анализы и вызов врача на дом для детей от 0 до 18 лет.">
+  <title>Детская клиника «Солнышко» — забота о детях в Екатеринбурге</title>
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- Иконки -->
+  <svg class="svg-sprite" aria-hidden="true" xmlns="http://www.w3.org/2000/svg">
+    <symbol id="i-arrow-right" viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></symbol>
+    <symbol id="i-arrow-up-right" viewBox="0 0 24 24"><path d="M7 17 17 7M8 7h9v9"/></symbol>
+    <symbol id="i-chevron-down" viewBox="0 0 24 24"><path d="m6 9 6 6 6-6"/></symbol>
+    <symbol id="i-pin" viewBox="0 0 24 24"><path d="M20 10c0 5.2-8 11-8 11S4 15.2 4 10a8 8 0 1 1 16 0Z"/><circle cx="12" cy="10" r="2.6"/></symbol>
+    <symbol id="i-clock" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3.5 2"/></symbol>
+    <symbol id="i-phone" viewBox="0 0 24 24"><path d="M7.1 3.7 9 8.1 6.6 10a14.8 14.8 0 0 0 7.4 7.4l1.9-2.4 4.4 1.9v3.2a2 2 0 0 1-2.2 2A18.6 18.6 0 0 1 2.9 5.9a2 2 0 0 1 2-2.2h2.2Z"/></symbol>
+    <symbol id="i-search" viewBox="0 0 24 24"><circle cx="10.8" cy="10.8" r="7.3"/><path d="m16.2 16.2 4.3 4.3"/></symbol>
+    <symbol id="i-shield" viewBox="0 0 24 24"><path d="M12 3 4.8 6v5.4c0 4.5 3 8 7.2 9.6 4.2-1.6 7.2-5.1 7.2-9.6V6L12 3Z"/><path d="m8.8 12 2.1 2.1 4.4-4.4"/></symbol>
+    <symbol id="i-stethoscope" viewBox="0 0 24 24"><path d="M5 3v5a4 4 0 0 0 8 0V3M3.5 3h3M11 3h3"/><path d="M9 15v1.5a4.5 4.5 0 0 0 9 0V14"/><circle cx="18" cy="11.5" r="2.5"/></symbol>
+    <symbol id="i-monitor" viewBox="0 0 24 24"><rect x="3" y="4" width="18" height="13" rx="2.5"/><path d="M8 21h8M12 17v4M6 11h3l1.5-3 3 6 1.5-3h3"/></symbol>
+    <symbol id="i-home" viewBox="0 0 24 24"><path d="m3 11 9-7.5L21 11"/><path d="M5.5 9.5V20h13V9.5M9.5 20v-5.5h5V20"/></symbol>
+    <symbol id="i-doc" viewBox="0 0 24 24"><path d="M6 3h8l4 4v14H6V3Z"/><path d="M14 3v5h5M9 12h6M9 16h5"/></symbol>
+    <symbol id="i-star" viewBox="0 0 24 24"><path d="m12 3 2.7 5.6 6.1.9-4.4 4.3 1 6.1-5.4-2.9-5.4 2.9 1-6.1-4.4-4.3 6.1-.9L12 3Z"/></symbol>
+    <symbol id="i-gift" viewBox="0 0 24 24"><path d="M4 9h16v4H4zM5.5 13V21h13v-8M12 9v12"/><path d="M12 9H8.8a2.8 2.8 0 1 1 0-5.6C10.6 3.4 12 9 12 9ZM12 9h3.2a2.8 2.8 0 1 0 0-5.6C13.4 3.4 12 9 12 9Z"/></symbol>
+    <symbol id="i-chat" viewBox="0 0 24 24"><path d="M20.5 11.4a7.8 7.8 0 0 1-8.1 7.5 9 9 0 0 1-3.4-.7L4 20l1.7-4.4a7.3 7.3 0 0 1-1.2-4A7.7 7.7 0 0 1 12.4 4h.4a7.6 7.6 0 0 1 7.7 7.4Z"/><path d="M8.5 11.5h.1M12 11.5h.1M15.5 11.5h.1"/></symbol>
+    <symbol id="i-send" viewBox="0 0 24 24"><path d="m21 3-7.2 18-4-7.8L2 9.2 21 3Z"/><path d="M9.8 13.2 21 3"/></symbol>
+    <symbol id="i-close" viewBox="0 0 24 24"><path d="m6 6 12 12M18 6 6 18"/></symbol>
+    <symbol id="i-check" viewBox="0 0 24 24"><path d="m4.5 12.5 5 5 10-11"/></symbol>
+    <symbol id="i-calendar" viewBox="0 0 24 24"><rect x="3" y="5" width="18" height="16" rx="2.5"/><path d="M8 3v4M16 3v4M3 10h18M8 14h.1M12 14h.1M16 14h.1M8 17.5h.1M12 17.5h.1"/></symbol>
+    <symbol id="i-user" viewBox="0 0 24 24"><circle cx="12" cy="8" r="4"/><path d="M4.5 21a7.5 7.5 0 0 1 15 0"/></symbol>
+    <symbol id="i-heart" viewBox="0 0 24 24"><path d="M20.8 5.8a5.2 5.2 0 0 0-7.4 0L12 7.2l-1.4-1.4a5.2 5.2 0 0 0-7.4 7.4L12 22l8.8-8.8a5.2 5.2 0 0 0 0-7.4Z"/></symbol>
+    <symbol id="i-menu" viewBox="0 0 24 24"><path d="M4 7h16M4 12h16M4 17h16"/></symbol>
+    <symbol id="i-sparkle" viewBox="0 0 24 24"><path d="M12 3c.6 4.8 3.2 7.4 8 8-4.8.6-7.4 3.2-8 8-.6-4.8-3.2-7.4-8-8 4.8-.6 7.4-3.2 8-8Z"/></symbol>
+  </svg>
+
+  <a class="skip-link" href="#main">Перейти к содержанию</a>
+
+  <header class="site-header">
+    <div class="topbar">
+      <div class="container topbar__inner">
+        <a class="brand" href="index.html" aria-label="Детская клиника Солнышко — на главную">
+          <svg class="brand__mark" viewBox="0 0 48 48" aria-hidden="true">
+            <defs>
+              <linearGradient id="brandGradient" x1="6" y1="2" x2="42" y2="46" gradientUnits="userSpaceOnUse">
+                <stop stop-color="#5FA8FF"/><stop offset="1" stop-color="#2E68E8"/>
+              </linearGradient>
+            </defs>
+            <rect width="48" height="48" rx="14" fill="url(#brandGradient)"/>
+            <circle cx="24" cy="19" r="6.8" fill="#FFE8A3"/>
+            <path d="M24 9.2v2M24 26.8v2M14.2 19h2M31.8 19h2M17.1 12.1l1.4 1.4M29.5 24.5l1.4 1.4M30.9 12.1l-1.4 1.4M18.5 24.5l-1.4 1.4" stroke="#FFE8A3" stroke-width="1.7" stroke-linecap="round"/>
+            <path d="M35 30.5c0 4.3-4.4 7.5-8.8 10.2-.7.4-1.6.4-2.3 0-4.5-2.7-8.9-5.9-8.9-10.2a5.2 5.2 0 0 1 9-3.5l1-1a5.2 5.2 0 0 1 10 4.5Z" fill="#fff"/>
+            <path d="M20 34h3.1l1.5-3 2.6 5 1.5-2.4H33" fill="none" stroke="#2E68E8" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+          <span class="brand__text">
+            <strong>Солнышко</strong>
+            <small>детская клиника</small>
+          </span>
+        </a>
+
+        <div class="topbar__meta">
+          <div class="meta-item meta-item--address">
+            <svg class="icon" aria-hidden="true"><use href="#i-pin"/></svg>
+            <span><small>Екатеринбург</small><b>ул. Малышева, 72</b></span>
+          </div>
+          <div class="meta-item meta-item--hours">
+            <svg class="icon" aria-hidden="true"><use href="#i-clock"/></svg>
+            <span><small>пн–сб 8:00–20:00</small><b>вс 9:00–18:00</b></span>
+          </div>
+          <a class="meta-phone" href="tel:+79925141465">
+            <small>Запись и вопросы</small>
+            <b>8 (992) 514-14-65</b>
+          </a>
+        </div>
+
+        <div class="topbar__actions">
+          <button class="btn btn--ghost btn--sm js-chat" type="button" aria-label="Задать вопрос в чате">
+            <svg class="icon" aria-hidden="true"><use href="#i-chat"/></svg>
+            <span>Задать вопрос</span>
+          </button>
+          <button class="btn btn--primary btn--sm js-appointment" type="button" data-appointment="online">
+            <span>Записаться онлайн</span>
+            <svg class="icon icon--sm" aria-hidden="true"><use href="#i-arrow-up-right"/></svg>
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <div class="navbar">
+      <div class="container navbar__inner">
+        <nav class="nav" aria-label="Основная навигация">
+          <ul class="nav__list">
+            <li class="nav__item nav__item--dropdown" id="aboutMenuItem">
+              <button class="nav__link nav__toggle" type="button" aria-expanded="false" aria-controls="aboutDropdown">
+                О центре
+                <svg class="icon icon--xs nav__chevron" aria-hidden="true"><use href="#i-chevron-down"/></svg>
+              </button>
+              <div class="dropdown" id="aboutDropdown">
+                <a class="dropdown__item" href="#about">
+                  <span class="dropdown__icon"><svg class="icon" aria-hidden="true"><use href="#i-heart"/></svg></span>
+                  <span><b>История и ценности</b><small>15 лет рядом с семьями</small></span>
+                </a>
+                <a class="dropdown__item" href="#" data-stub="Раздел «Наши врачи» скоро появится">
+                  <span class="dropdown__icon"><svg class="icon" aria-hidden="true"><use href="#i-stethoscope"/></svg></span>
+                  <span><b>Наши врачи</b><small>34 специалиста с опытом от 7 лет</small></span>
+                </a>
+                <a class="dropdown__item" href="#legal">
+                  <span class="dropdown__icon"><svg class="icon" aria-hidden="true"><use href="#i-doc"/></svg></span>
+                  <span><b>Лицензии и документы</b><small>Всё официально и прозрачно</small></span>
+                </a>
+                <a class="dropdown__item" href="#" data-stub="Раздел «Отзывы родителей» скоро появится">
+                  <span class="dropdown__icon"><svg class="icon" aria-hidden="true"><use href="#i-star"/></svg></span>
+                  <span><b>Отзывы родителей</b><small>4,9 из 5 по 1 200+ отзывам</small></span>
+                </a>
+                <a class="dropdown__item" href="#" data-stub="Раздел «Вакансии» скоро появится">
+                  <span class="dropdown__icon"><svg class="icon" aria-hidden="true"><use href="#i-user"/></svg></span>
+                  <span><b>Вакансии</b><small>Работа в команде, которой доверяют</small></span>
+                </a>
+              </div>
+            </li>
+            <li class="nav__item"><a class="nav__link" href="#services">Услуги</a></li>
+            <li class="nav__item"><a class="nav__link" href="#" data-stub="Раздел «Цены» скоро появится">Цены</a></li>
+            <li class="nav__item"><a class="nav__link" href="#" data-stub="Раздел «Врачи» скоро появится">Врачи</a></li>
+            <li class="nav__item"><a class="nav__link" href="#contacts">Расписание специалистов</a></li>
+            <li class="nav__item"><a class="nav__link" href="#news">Новости</a></li>
+            <li class="nav__item"><a class="nav__link" href="#notice">Пациентам</a></li>
+            <li class="nav__item"><a class="nav__link" href="#news">Статьи</a></li>
+            <li class="nav__item"><a class="nav__link" href="#contacts">Контакты</a></li>
+          </ul>
+        </nav>
+
+        <div class="navbar__tools">
+          <button class="icon-btn" type="button" id="searchOpen" aria-label="Поиск по сайту">
+            <svg class="icon" aria-hidden="true"><use href="#i-search"/></svg>
+          </button>
+          <button class="icon-btn menu-toggle" type="button" id="menuToggle" aria-label="Открыть меню" aria-expanded="false" aria-controls="mobileMenu">
+            <svg class="icon menu-toggle__open" aria-hidden="true"><use href="#i-menu"/></svg>
+            <svg class="icon menu-toggle__close" aria-hidden="true"><use href="#i-close"/></svg>
+            <span class="menu-toggle__label">Меню</span>
+          </button>
+        </div>
+      </div>
+
+      <div class="mobile-menu" id="mobileMenu" aria-hidden="true">
+        <nav class="mobile-menu__inner" aria-label="Мобильная навигация">
+          <div class="mobile-menu__about">
+            <button class="mobile-menu__toggle" type="button" aria-expanded="false" aria-controls="mobileAbout">
+              О центре
+              <svg class="icon" aria-hidden="true"><use href="#i-chevron-down"/></svg>
+            </button>
+            <div class="mobile-submenu" id="mobileAbout" hidden>
+              <a href="#about">История и ценности</a>
+              <a href="#" data-stub="Раздел «Наши врачи» скоро появится">Наши врачи</a>
+              <a href="#legal">Лицензии и документы</a>
+              <a href="#" data-stub="Раздел «Отзывы родителей» скоро появится">Отзывы родителей</a>
+              <a href="#" data-stub="Раздел «Вакансии» скоро появится">Вакансии</a>
+            </div>
+          </div>
+          <a class="mobile-menu__link" href="#services">Услуги</a>
+          <a class="mobile-menu__link" href="#" data-stub="Раздел «Цены» скоро появится">Цены</a>
+          <a class="mobile-menu__link" href="#" data-stub="Раздел «Врачи» скоро появится">Врачи</a>
+          <a class="mobile-menu__link" href="#contacts">Расписание специалистов</a>
+          <a class="mobile-menu__link" href="#news">Новости</a>
+          <a class="mobile-menu__link" href="#notice">Пациентам</a>
+          <a class="mobile-menu__link" href="#news">Статьи</a>
+          <a class="mobile-menu__link" href="#contacts">Контакты</a>
+          <div class="mobile-menu__actions">
+            <button class="btn btn--primary js-appointment" type="button" data-appointment="online">Записаться онлайн</button>
+            <button class="btn btn--ghost js-chat" type="button">Задать вопрос</button>
+            <a class="mobile-menu__phone" href="tel:+79925141465">8 (992) 514-14-65</a>
+          </div>
+        </nav>
+      </div>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="hero" aria-labelledby="heroTitle">
+      <div class="hero__art" aria-hidden="true">
+        <img src="assets/hero.svg" alt="">
+      </div>
+      <div class="container hero__inner">
+        <div class="hero__copy">
+          <p class="eyebrow"><span class="eyebrow__dot"></span>Детская клиника в Екатеринбурге</p>
+          <h1 class="hero__title" id="heroTitle">
+            <span class="hero__line">Комплексный подход</span>
+            <span class="hero__line">диагностика, анализы,</span>
+            <span class="hero__line hero__line--accent">лечение в одном месте</span>
+          </h1>
+          <p class="hero__lead">Для детей от 0 до 18 лет. Бережно, без стресса и очередей — с заботой о каждом маленьком пациенте.</p>
+          <div class="hero__actions">
+            <button class="btn btn--primary js-appointment" type="button" data-appointment="online">
+              <svg class="icon" aria-hidden="true"><use href="#i-calendar"/></svg>
+              Записаться онлайн
+            </button>
+            <button class="btn btn--danger js-appointment" type="button" data-appointment="home">
+              <svg class="icon" aria-hidden="true"><use href="#i-home"/></svg>
+              Вызвать врача на дом
+            </button>
+            <button class="btn btn--ghost js-chat" type="button">
+              <svg class="icon" aria-hidden="true"><use href="#i-chat"/></svg>
+              Задать вопрос
+            </button>
+          </div>
+          <div class="hero__trust">
+            <span class="stars" aria-hidden="true">★★★★★</span>
+            <span><b>4,9</b> — рейтинг родителей</span>
+            <span class="hero__trust-sep"></span>
+            <span>1 200+ отзывов</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="advantages" aria-label="Преимущества клиники">
+      <div class="container">
+        <div class="advantages__grid">
+          <div class="advantage">
+            <span class="advantage__icon"><svg class="icon" aria-hidden="true"><use href="#i-shield"/></svg></span>
+            <p><b>15 лет заботы</b><span>о детях и их семьях</span></p>
+          </div>
+          <div class="advantage">
+            <span class="advantage__icon"><svg class="icon" aria-hidden="true"><use href="#i-stethoscope"/></svg></span>
+            <p><b>32 направления</b><span>медицинской помощи</span></p>
+          </div>
+          <div class="advantage">
+            <span class="advantage__icon"><svg class="icon" aria-hidden="true"><use href="#i-monitor"/></svg></span>
+            <p><b>Оборудование</b><span>экспертного класса</span></p>
+          </div>
+          <div class="advantage advantage--last">
+            <span class="advantage__icon"><svg class="icon" aria-hidden="true"><use href="#i-home"/></svg></span>
+            <p><b>Вызов врача на дом</b><span>в день обращения</span></p>
+            <span class="status-pill"><i></i>Онлайн</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <div class="intro">
+      <div class="container">
+        <p class="intro__text">Детская клиника «Солнышко» — это педиатрия, узкие специалисты, диагностика и лаборатория в одном пространстве. У нас открыты кабинеты неврологии, ортопедии, офтальмологии, ЛОР, аллергологии, гастроэнтерологии, эндокринологии, логопедии и детской психологии. Мы принимаем детей от 0 до 18 лет, работаем по ДМС и платно, а при необходимости приезжаем на дом. Мы не только возвращаем здоровье, но и заботимся о комфорте, безопасности и времени семьи, которая нам доверяет.</p>
+      </div>
+    </div>
+
+    <section class="notice" id="notice" aria-labelledby="noticeTitle">
+      <div class="container">
+        <div class="notice__box">
+          <div class="notice__mark" aria-hidden="true">
+            <svg class="icon"><use href="#i-heart"/></svg>
+          </div>
+          <div class="notice__content">
+            <h2 id="noticeTitle">Уважаемые родители!</h2>
+            <p>Оплачивайте услуги картой любого банка, Apple Pay, Google Pay и Samsung Pay. Работаем по ДМС, программе лояльности и подарочным сертификатам. Если не знаете, к какому специалисту обратиться, — <button class="inline-link js-chat" type="button">напишите нам в чат</button>, администратор поможет подобрать врача и удобное время.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section promos" id="promos" aria-labelledby="promosTitle">
+      <div class="container">
+        <div class="section__head">
+          <div>
+            <h2 class="section__title" id="promosTitle">Акции и спецпредложения</h2>
+            <p class="section__sub">Забота о здоровье, которая выгодна всей семье</p>
+          </div>
+          <a class="text-link" href="#" data-stub="Страница всех акций скоро появится">
+            Все акции
+            <span class="text-link__circle"><svg class="icon icon--sm" aria-hidden="true"><use href="#i-arrow-right"/></svg></span>
+          </a>
+        </div>
+
+        <div class="promos__grid">
+          <article class="promo-card">
+            <div class="promo-card__media">
+              <img src="assets/promo-checkup.svg" alt="Педиатр осматривает ребёнка на приёме">
+              <span class="promo-card__badge">−10%</span>
+            </div>
+            <div class="promo-card__body">
+              <h3>Чек-ап «Здоровый ребёнок»</h3>
+              <p>Комплексное обследование для детей от 3 до 14 лет: педиатр, анализы и ЭКГ.</p>
+            </div>
+          </article>
+
+          <article class="promo-card">
+            <div class="promo-card__media">
+              <img src="assets/promo-vitamins.svg" alt="Витамины и полезные продукты для детей">
+              <span class="promo-card__badge">−15%</span>
+            </div>
+            <div class="promo-card__body">
+              <h3>Программа «Крепкий иммунитет»</h3>
+              <p>Вакцинация, анализы и наблюдение педиатра перед сезоном простуд.</p>
+            </div>
+          </article>
+
+          <article class="promo-card">
+            <div class="promo-card__media">
+              <img src="assets/promo-ultrasound.svg" alt="УЗИ-диагностика ребёнка в детской клинике">
+              <span class="promo-card__badge">−10%</span>
+            </div>
+            <div class="promo-card__body">
+              <h3>УЗИ для детей от 1 года</h3>
+              <p>Безболезненная диагностика на оборудовании экспертного класса. Заключение в день обращения.</p>
+            </div>
+          </article>
+
+          <article class="promo-card">
+            <div class="promo-card__media">
+              <img src="assets/promo-vaccine.svg" alt="Медсестра и смелый пациент после вакцинации">
+              <span class="promo-card__badge">−10%</span>
+            </div>
+            <div class="promo-card__body">
+              <h3>Вакцинация перед школой</h3>
+              <p>Прививки по календарю и индивидуальному плану. Без стресса и очередей.</p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section services" id="services" aria-labelledby="servicesTitle">
+      <div class="container">
+        <div class="section__head">
+          <div>
+            <h2 class="section__title" id="servicesTitle">Услуги центра</h2>
+            <p class="section__sub">Помогаем на каждом этапе — от первого года до выпускного</p>
+          </div>
+          <a class="text-link" href="#" data-stub="Полный список услуг скоро появится">
+            Все услуги
+            <span class="text-link__circle"><svg class="icon icon--sm" aria-hidden="true"><use href="#i-arrow-right"/></svg></span>
+          </a>
+        </div>
+
+        <div class="services__layout">
+          <div class="services__column">
+            <article class="service-panel service-panel--sky service-panel--large">
+              <div class="service-panel__head">
+                <h3>Малышам</h3>
+                <span class="service-panel__badge">0–3 года</span>
+              </div>
+              <div class="service-panel__links service-panel__links--two">
+                <a href="#" data-appointment="online">Педиатрия</a>
+                <a href="#" data-appointment="online">Неонатология</a>
+                <a href="#" data-appointment="online">Вакцинация</a>
+                <a href="#" data-appointment="online">Детский массаж</a>
+                <a href="#" data-appointment="online">Грудное вскармливание</a>
+                <a href="#" data-appointment="online">Аллергология</a>
+                <a href="#" data-appointment="online">Гастроэнтерология</a>
+                <a href="#" data-appointment="online">Неврология</a>
+              </div>
+              <p class="service-panel__note">Ведём малыша с рождения и всегда на связи с родителями.</p>
+            </article>
+
+            <article class="service-panel service-panel--rose">
+              <div class="service-panel__head">
+                <h3>Справки</h3>
+              </div>
+              <div class="service-panel__links service-panel__links--two">
+                <a href="#" data-appointment="online">Справка в детский сад</a>
+                <a href="#" data-appointment="online">Справка в школу</a>
+                <a href="#" data-appointment="online">Справка для спорта</a>
+                <a href="#" data-appointment="online">Справка в бассейн</a>
+                <a href="#" data-appointment="online">Медицинская карта</a>
+                <a href="#" data-appointment="online">Выдача справок</a>
+              </div>
+            </article>
+          </div>
+
+          <div class="services__column">
+            <article class="service-panel service-panel--peach">
+              <div class="service-panel__head">
+                <h3>Детям и подросткам</h3>
+                <span class="service-panel__badge">4–18 лет</span>
+              </div>
+              <div class="service-panel__links service-panel__links--two">
+                <a href="#" data-appointment="online">Педиатрия</a>
+                <a href="#" data-appointment="online">Неврология</a>
+                <a href="#" data-appointment="online">Ортопедия</a>
+                <a href="#" data-appointment="online">Офтальмология</a>
+                <a href="#" data-appointment="online">ЛОР</a>
+                <a href="#" data-appointment="online">Дерматология</a>
+                <a href="#" data-appointment="online">Эндокринология</a>
+                <a href="#" data-appointment="online">Логопедия</a>
+                <a href="#" data-appointment="online">Психология</a>
+                <a href="#" data-appointment="online">Кардиология</a>
+              </div>
+            </article>
+
+            <article class="service-panel service-panel--mint">
+              <div class="service-panel__head">
+                <h3>Диагностика</h3>
+              </div>
+              <div class="service-panel__links service-panel__links--two">
+                <a href="#" data-appointment="online">УЗИ</a>
+                <a href="#" data-appointment="online">Лаборатория</a>
+                <a href="#" data-appointment="online">ЭКГ</a>
+                <a href="#" data-appointment="online">Эхокардиография</a>
+                <a href="#" data-appointment="online">Рентген</a>
+                <a href="#" data-appointment="online">Анализы крови</a>
+              </div>
+            </article>
+
+            <article class="service-panel service-panel--lavender">
+              <div class="service-panel__head">
+                <h3>Родителям</h3>
+              </div>
+              <div class="service-panel__links">
+                <a href="#" data-appointment="home">Вызов врача на дом</a>
+                <a href="#" data-stub="Телемедицина скоро появится">Телемедицина</a>
+                <a href="#" data-stub="Школа родителей скоро появится">Школа здоровья</a>
+                <a href="#" data-stub="Сертификаты — в разделе акций">Подарочные сертификаты</a>
+              </div>
+            </article>
+          </div>
+        </div>
+
+        <div class="services__footer">
+          <div class="mini-features">
+            <a class="mini-feature" href="#" data-stub="Информация о ДМС скоро появится">
+              <svg class="icon" aria-hidden="true"><use href="#i-doc"/></svg>
+              <span>Добровольное медицинское страхование (ДМС)</span>
+            </a>
+            <a class="mini-feature" href="#" data-stub="Программа лояльности скоро появится">
+              <svg class="icon" aria-hidden="true"><use href="#i-star"/></svg>
+              <span>Программа лояльности</span>
+            </a>
+            <a class="mini-feature" href="#" data-stub="Подарочные сертификаты скоро появятся">
+              <svg class="icon" aria-hidden="true"><use href="#i-gift"/></svg>
+              <span>Подарочные сертификаты</span>
+            </a>
+          </div>
+          <div class="services__actions">
+            <button class="btn btn--primary btn--sm js-appointment" type="button" data-appointment="online">Записаться онлайн</button>
+            <button class="btn btn--danger btn--sm js-appointment" type="button" data-appointment="home">Вызвать врача на дом</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section about" id="about" aria-labelledby="aboutTitle">
+      <div class="container">
+        <div class="section__head section__head--tight">
+          <h2 class="section__title" id="aboutTitle">О центре</h2>
+        </div>
+
+        <div class="about__lead">
+          <p>Очень важно оправдать доверие родителей — поэтому мы стремимся быть чуть лучше, чем нас ждут.</p>
+          <div class="about__stat" aria-label="32 направления медицинской помощи">
+            <strong>32</strong>
+            <span>направления медицинской помощи</span>
+          </div>
+        </div>
+
+        <div class="about__text">
+          <p>Клиника «Солнышко» работает с 2011 года. Мы объединили педиатров, узких специалистов, диагностику и лабораторию в одном пространстве, чтобы семья могла получить помощь без лишних поездок и долгого ожидания.</p>
+          <p>В работе используем только методы с доказанной эффективностью. Объясняем каждое назначение, не назначаем лишних обследований и находим подход даже к самым стеснительным пациентам. В клинике создана атмосфера, в которой детям спокойно, а родителям — понятно.</p>
+        </div>
+
+        <div class="about__gallery">
+          <figure class="about__photo about__photo--wide">
+            <img src="assets/gallery-building.svg" alt="Здание детской клиники «Солнышко»">
+          </figure>
+          <figure class="about__photo">
+            <img src="assets/gallery-reception.svg" alt="Зона ожидания и игровая в детской клинике">
+          </figure>
+          <figure class="about__photo">
+            <img src="assets/gallery-office.svg" alt="Педиатрический кабинет с врачом и ребёнком">
+          </figure>
+          <figure class="about__photo">
+            <img src="assets/gallery-lab.svg" alt="Кабинет УЗИ-диагностики">
+          </figure>
+        </div>
+
+        <div class="about__footer">
+          <a class="text-link" href="#" data-stub="Подробная страница о центре скоро появится">
+            Подробнее о центре
+            <span class="text-link__circle"><svg class="icon icon--sm" aria-hidden="true"><use href="#i-arrow-right"/></svg></span>
+          </a>
+          <div class="about__links">
+            <a class="underlined-link" href="#legal" id="legal">Правовая информация</a>
+            <a class="btn btn--outline btn--sm" href="#" data-stub="Раздел «Вакансии» скоро появится">Вакансии</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section news" id="news" aria-labelledby="newsTitle">
+      <div class="container">
+        <div class="section__head">
+          <div>
+            <h2 class="section__title" id="newsTitle">Новости центра</h2>
+            <p class="section__sub">Полезные материалы от наших врачей</p>
+          </div>
+          <a class="text-link" href="#" data-stub="Все новости скоро появятся">
+            Все новости
+            <span class="text-link__circle"><svg class="icon icon--sm" aria-hidden="true"><use href="#i-arrow-right"/></svg></span>
+          </a>
+        </div>
+
+        <div class="news__grid">
+          <article class="news-card">
+            <a class="news-card__media" href="#" data-stub="Статья «Как подготовить ребёнка к анализу крови» скоро появится">
+              <img src="assets/news-blood.svg" alt="Мама поддерживает ребёнка перед анализом крови">
+            </a>
+            <div class="news-card__body">
+              <time datetime="2026-11-12">12 ноября 2026</time>
+              <h3><a href="#" data-stub="Статья «Как подготовить ребёнка к анализу крови» скоро появится">Как подготовить ребёнка к анализу крови без слёз</a></h3>
+              <p>Пять простых приёмов, которые помогут маленькому пациенту чувствовать себя спокойнее.</p>
+            </div>
+          </article>
+
+          <article class="news-card">
+            <a class="news-card__media" href="#" data-stub="Статья о сезонных простудах скоро появится">
+              <img src="assets/news-orvi.svg" alt="Ребёнок с чашкой чая и плюшевым мишкой дома">
+            </a>
+            <div class="news-card__body">
+              <time datetime="2026-11-05">5 ноября 2026</time>
+              <h3><a href="#" data-stub="Статья о сезонных простудах скоро появится">Грипп, ОРВИ и «сезон соплей»: когда пора к врачу</a></h3>
+              <p>Разбираем тревожные симптомы, при которых нельзя ждать до утра.</p>
+            </div>
+          </article>
+
+          <article class="news-card">
+            <a class="news-card__media" href="#" data-stub="Новость о кабинете логопеда скоро появится">
+              <img src="assets/news-speech.svg" alt="Занятие с логопедом в детской клинике">
+            </a>
+            <div class="news-card__body">
+              <time datetime="2026-10-28">28 октября 2026</time>
+              <h3><a href="#" data-stub="Новость о кабинете логопеда скоро появится">Запускаем кабинет логопеда-дефектолога</a></h3>
+              <p>Теперь занятия проходят в клинике — в уютном кабинете с интерактивным зеркалом.</p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer" id="contacts">
+    <div class="container">
+      <div class="footer__top">
+        <div class="footer__brand">
+          <a class="brand brand--footer" href="index.html" aria-label="Детская клиника Солнышко — на главную">
+            <svg class="brand__mark" viewBox="0 0 48 48" aria-hidden="true">
+              <rect width="48" height="48" rx="14" fill="#2E68E8"/>
+              <circle cx="24" cy="19" r="6.8" fill="#FFE8A3"/>
+              <path d="M24 9.2v2M24 26.8v2M14.2 19h2M31.8 19h2M17.1 12.1l1.4 1.4M29.5 24.5l1.4 1.4M30.9 12.1l-1.4 1.4M18.5 24.5l-1.4 1.4" stroke="#FFE8A3" stroke-width="1.7" stroke-linecap="round"/>
+              <path d="M35 30.5c0 4.3-4.4 7.5-8.8 10.2-.7.4-1.6.4-2.3 0-4.5-2.7-8.9-5.9-8.9-10.2a5.2 5.2 0 0 1 9-3.5l1-1a5.2 5.2 0 0 1 10 4.5Z" fill="#fff"/>
+              <path d="M20 34h3.1l1.5-3 2.6 5 1.5-2.4H33" fill="none" stroke="#2E68E8" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+            <span class="brand__text">
+              <strong>Солнышко</strong>
+              <small>детская клиника</small>
+            </span>
+          </a>
+          <p>Большая забота о маленьких пациентах. Диагностика, лечение и поддержка семьи — в одном месте.</p>
+          <div class="footer__socials" aria-label="Мы в социальных сетях">
+            <a href="#" data-stub="Наш Telegram скоро появится" aria-label="Telegram"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M21.4 4.2 2.9 11.3c-.9.3-.9 1.5 0 1.8l4.5 1.4 1.7 5.2c.3.8 1.2 1 1.8.4l2.4-2.4 4.4 3.2c.7.5 1.6.1 1.8-.7l3-14.3c.2-.9-.7-1.6-1.5-1.3ZM8.8 14.2l8.8-6.6-7.2 7.6-.3 3.2-1.3-4.2Z"/></svg></a>
+            <a href="#" data-stub="Наш VK скоро появится" aria-label="VK"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12.8 17.9c-5.7 0-9-3.9-9.1-10.3h2.9c.1 4.7 2.2 6.7 3.9 7.1V7.6h2.7v4.1c1.7-.2 3.4-2.1 4-4.1h2.7c-.5 2.5-2.3 4.4-3.6 5.1 1.3.6 3.4 2.3 4.2 5.2h-3c-.6-1.9-2.2-3.3-4.3-3.5v3.5h-.4Z"/></svg></a>
+            <a href="#" data-stub="Наш YouTube скоро появится" aria-label="YouTube"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M22 8.2a3 3 0 0 0-2.1-2.1C18.1 5.6 12 5.6 12 5.6s-6.1 0-7.9.5A3 3 0 0 0 2 8.2 31 31 0 0 0 1.5 12 31 31 0 0 0 2 15.8a3 3 0 0 0 2.1 2.1c1.8.5 7.9.5 7.9.5s6.1 0 7.9-.5a3 3 0 0 0 2.1-2.1 31 31 0 0 0 .5-3.8 31 31 0 0 0-.5-3.8ZM10 15.2V8.8l5.2 3.2-5.2 3.2Z"/></svg></a>
+          </div>
+        </div>
+
+        <div class="footer__col">
+          <h3>Клиника</h3>
+          <a href="#about">О центре</a>
+          <a href="#services">Услуги</a>
+          <a href="#" data-stub="Раздел «Врачи» скоро появится">Врачи</a>
+          <a href="#news">Новости</a>
+          <a href="#legal">Лицензии и документы</a>
+        </div>
+
+        <div class="footer__col">
+          <h3>Пациентам</h3>
+          <a href="#" data-stub="Раздел «Цены» скоро появится">Цены</a>
+          <a href="#" data-appointment="online">Записаться онлайн</a>
+          <a href="#" class="js-chat">Задать вопрос</a>
+          <a href="#" data-stub="Информация о ДМС скоро появится">ДМС</a>
+          <a href="#" data-stub="Правовая информация скоро появится">Правовая информация</a>
+        </div>
+
+        <div class="footer__col footer__col--contacts">
+          <h3>Контакты</h3>
+          <a class="footer__phone" href="tel:+79925141465">8 (992) 514-14-65</a>
+          <p>Екатеринбург,<br>ул. Малышева, 72</p>
+          <p>пн–сб 8:00–20:00<br>вс 9:00–18:00</p>
+          <button class="btn btn--primary btn--sm js-appointment" type="button" data-appointment="online">Записаться онлайн</button>
+        </div>
+      </div>
+
+      <div class="footer__bottom">
+        <p>© 2026 Детская клиника «Солнышко». Все права защищены.</p>
+        <p class="footer__disclaimer">Имеются противопоказания. Необходима консультация специалиста.</p>
+        <a href="#" data-stub="Политика конфиденциальности скоро появится">Политика конфиденциальности</a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Модальное окно записи -->
+  <div class="modal" id="appointmentModal" role="dialog" aria-modal="true" aria-labelledby="appointmentTitle" aria-hidden="true">
+    <div class="modal__backdrop" data-close-modal></div>
+    <div class="modal__dialog modal__dialog--appointment" role="document">
+      <button class="modal__close" type="button" data-close-modal aria-label="Закрыть окно записи">
+        <svg class="icon" aria-hidden="true"><use href="#i-close"/></svg>
+      </button>
+
+      <aside class="appointment-aside">
+        <span class="appointment-aside__eyebrow">Онлайн-запись</span>
+        <h2>Записаться<br>на приём</h2>
+        <p>Перезвоним в течение 15 минут в рабочие часы, подберём врача и удобное время.</p>
+        <ul class="appointment-aside__list">
+          <li><svg class="icon" aria-hidden="true"><use href="#i-check"/></svg>Дети от 0 до 18 лет</li>
+          <li><svg class="icon" aria-hidden="true"><use href="#i-check"/></svg>Работаем по ДМС и платно</li>
+          <li><svg class="icon" aria-hidden="true"><use href="#i-check"/></svg>Без очередей и стресса</li>
+        </ul>
+        <div class="appointment-aside__contact">
+          <span>Нужна помощь сейчас?</span>
+          <a href="tel:+79925141465">8 (992) 514-14-65</a>
+        </div>
+        <svg class="appointment-aside__art" viewBox="0 0 160 160" aria-hidden="true">
+          <circle cx="80" cy="80" r="64" fill="rgba(255,255,255,.12)"/>
+          <path d="M45 82c0-9 7-16 16-16 6 0 11 3 14 8 3-5 8-8 14-8 9 0 16 7 16 16 0 14-17 24-30 33-13-9-30-19-30-33Z" fill="#fff" opacity=".9"/>
+          <path d="M58 84h10l6-12 9 24 6-12h12" fill="none" stroke="#2E68E8" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+      </aside>
+
+      <div class="appointment-main">
+        <p class="appointment-main__eyebrow" id="appointmentMode">Онлайн-запись</p>
+        <h2 id="appointmentTitle">Записаться на приём</h2>
+        <p class="appointment-main__subtitle" id="appointmentSubtitle">Оставьте контакты — администратор свяжется с вами и подтвердит запись.</p>
+
+        <form class="form" id="appointmentForm" novalidate>
+          <input type="hidden" name="visitType" id="visitType" value="online">
+          <div class="form__row">
+            <label class="field">
+              <span>Ваше имя <em>*</em></span>
+              <input type="text" name="name" id="clientName" placeholder="Например, Анна" autocomplete="name" required>
+              <small class="field__error" data-error-for="clientName">Укажите, как к вам обращаться</small>
+            </label>
+            <label class="field">
+              <span>Телефон <em>*</em></span>
+              <input type="tel" name="phone" id="clientPhone" placeholder="+7 (___) ___-__-__" autocomplete="tel" inputmode="tel" required>
+              <small class="field__error" data-error-for="clientPhone">Введите номер телефона</small>
+            </label>
+          </div>
+
+          <div class="form__row">
+            <label class="field">
+              <span>Возраст ребёнка</span>
+              <select name="age" id="clientAge">
+                <option value="">Выберите возраст</option>
+                <option>0–1 год</option>
+                <option>1–3 года</option>
+                <option>3–7 лет</option>
+                <option>7–14 лет</option>
+                <option>14–18 лет</option>
+              </select>
+            </label>
+            <label class="field">
+              <span>Специалист</span>
+              <select name="specialist" id="clientSpecialist">
+                <option value="">Подберём сами</option>
+                <option>Педиатр</option>
+                <option>Невролог</option>
+                <option>Ортопед</option>
+                <option>Офтальмолог</option>
+                <option>ЛОР</option>
+                <option>Аллерголог</option>
+                <option>Логопед</option>
+                <option>Другой специалист</option>
+              </select>
+            </label>
+          </div>
+
+          <div class="form__row">
+            <label class="field">
+              <span>Удобная дата</span>
+              <input type="date" name="date" id="clientDate">
+            </label>
+            <label class="field">
+              <span>Удобное время</span>
+              <select name="time" id="clientTime">
+                <option value="">Любое время</option>
+                <option>Утро, 8:00–12:00</option>
+                <option>День, 12:00–17:00</option>
+                <option>Вечер, 17:00–20:00</option>
+              </select>
+            </label>
+          </div>
+
+          <label class="checkbox">
+            <input type="checkbox" name="consent" id="clientConsent" required>
+            <span>Согласен на обработку персональных данных и с <a href="#" data-stub="Политика конфиденциальности скоро появится">политикой конфиденциальности</a></span>
+          </label>
+          <small class="field__error field__error--consent" data-error-for="clientConsent">Нужно согласие на обработку данных</small>
+
+          <button class="btn btn--primary form__submit" type="submit">
+            <span>Отправить заявку</span>
+            <svg class="icon" aria-hidden="true"><use href="#i-arrow-right"/></svg>
+          </button>
+          <p class="form__note">Нажимая кнопку, вы соглашаетесь с условиями обработки данных. Это демонстрационная форма — данные никуда не отправляются.</p>
+        </form>
+
+        <div class="form-success" id="appointmentSuccess" hidden>
+          <div class="form-success__icon"><svg class="icon" aria-hidden="true"><use href="#i-check"/></svg></div>
+          <h3>Заявка отправлена!</h3>
+          <p id="appointmentSuccessText">Спасибо! Администратор свяжется с вами в течение 15 минут в рабочие часы.</p>
+          <button class="btn btn--primary" type="button" data-close-modal>Хорошо, спасибо</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Чат -->
+  <aside class="chat" id="chatWidget" aria-label="Онлайн-чат с администратором" aria-hidden="true">
+    <header class="chat__header">
+      <div class="chat__avatar" aria-hidden="true">С</div>
+      <div class="chat__person">
+        <b>Администратор клиники</b>
+        <span><i></i>Онлайн · отвечаем за 2 минуты</span>
+      </div>
+      <button class="chat__close" type="button" id="chatClose" aria-label="Закрыть чат">
+        <svg class="icon" aria-hidden="true"><use href="#i-close"/></svg>
+      </button>
+    </header>
+
+    <div class="chat__body" id="chatMessages" aria-live="polite">
+      <div class="message message--in">
+        <p>Здравствуйте! Я администратор клиники «Солнышко». Подскажу по услугам, ценам и помогу выбрать время для визита.</p>
+        <time>сейчас</time>
+      </div>
+      <div class="chat__quick">
+        <button type="button" data-chat-quick="Записаться к педиатру">Записаться к педиатру</button>
+        <button type="button" data-chat-quick="Уточнить цены">Уточнить цены</button>
+        <button type="button" data-chat-quick="Вызвать врача на дом">Вызвать врача на дом</button>
+        <button type="button" data-chat-quick="Работаете по ДМС?">Работаете по ДМС?</button>
+      </div>
+    </div>
+
+    <form class="chat__form" id="chatForm">
+      <label class="sr-only" for="chatInput">Ваше сообщение</label>
+      <input type="text" id="chatInput" placeholder="Напишите ваш вопрос…" autocomplete="off">
+      <button type="submit" aria-label="Отправить сообщение">
+        <svg class="icon" aria-hidden="true"><use href="#i-send"/></svg>
+      </button>
+    </form>
+    <p class="chat__note">Не является медицинской консультацией. При острых состояниях звоните 112.</p>
+  </aside>
+
+  <!-- Поиск -->
+  <div class="search-modal" id="searchModal" role="dialog" aria-modal="true" aria-labelledby="searchTitle" aria-hidden="true">
+    <div class="search-modal__backdrop" data-close-search></div>
+    <div class="search-modal__dialog">
+      <div class="search-modal__top">
+        <h2 id="searchTitle">Поиск по сайту</h2>
+        <button class="modal__close modal__close--static" type="button" data-close-search aria-label="Закрыть поиск">
+          <svg class="icon" aria-hidden="true"><use href="#i-close"/></svg>
+        </button>
+      </div>
+      <form class="search-form" id="searchForm">
+        <svg class="icon" aria-hidden="true"><use href="#i-search"/></svg>
+        <input type="search" id="searchInput" placeholder="Врач, услуга или вопрос" autocomplete="off">
+        <button class="btn btn--primary btn--sm" type="submit">Найти</button>
+      </form>
+      <div class="search-hints" id="searchHints">
+        <span class="search-hints__label">Популярное</span>
+        <button type="button" data-search-go="#services">Педиатр</button>
+        <button type="button" data-search-go="#services">УЗИ</button>
+        <button type="button" data-search-go="#promos">Акции</button>
+        <button type="button" data-search-go="#news">Статьи врачей</button>
+      </div>
+      <div class="search-result" id="searchResult" hidden></div>
+    </div>
+  </div>
+
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+  <script src="js/app.js"></script>
+</body>
+</html>
