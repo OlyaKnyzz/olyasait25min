@@ -1,0 +1,162 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 520" role="img" aria-labelledby="t d">
+  <title id="t">Вакцинация без стресса</title>
+  <desc id="d">Улыбающаяся медсестра с вакциной и смелый мальчик со звёздным пластырем на плече.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="800" y2="520" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#fff8f5"/><stop offset="1" stop-color="#ffe4e2"/>
+    </linearGradient>
+    <linearGradient id="wall" x1="0" y1="0" x2="0" y2="370" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#fff6f2"/><stop offset="1" stop-color="#ffe9e6"/>
+    </linearGradient>
+    <linearGradient id="scrub" x1="190" y1="220" x2="330" y2="450" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#82cbb7"/><stop offset="1" stop-color="#5cb29b"/>
+    </linearGradient>
+    <linearGradient id="shield" x1="0" y1="0" x2="0" y2="1">
+      <stop stop-color="#ffd5d6"/><stop offset="1" stop-color="#ffc3c5"/>
+    </linearGradient>
+    <filter id="b" x="-30%" y="-30%" width="160%" height="160%"><feGaussianBlur stdDeviation="7"/></filter>
+  </defs>
+
+  <rect width="800" height="520" fill="url(#bg)"/>
+  <path d="M0 0h800v372H0z" fill="url(#wall)"/>
+  <path d="M224 372V197c0-92 74-166 166-166s166 74 166 166v175" fill="#ffdfe0" opacity=".5"/>
+
+  <!-- щит на стене -->
+  <g opacity=".75">
+    <path d="M578 93c0 60-31 101-78 120-47-19-78-60-78-120 0-16 12-28 28-28h100c16 0 28 12 28 28Z" fill="url(#shield)"/>
+    <path d="M532 101c25 12 41 22 41 22v45c0 33-18 58-41 69-23-11-41-36-41-69v-45s16-10 41-22Z" fill="#fff" opacity=".65"/>
+    <path d="M514 167l13 13 25-29" fill="none" stroke="#e97681" stroke-width="7" stroke-linecap="round" stroke-linejoin="round"/>
+  </g>
+
+  <!-- декор -->
+  <g opacity=".9">
+    <circle cx="664" cy="75" r="6" fill="#f4a19f"/>
+    <circle cx="691" cy="123" r="4" fill="#ffc96f"/>
+    <circle cx="624" cy="52" r="3.5" fill="#8bc9b5"/>
+    <path d="M688 195l7 7M694 193l-7 7" stroke="#f4a19f" stroke-width="3" stroke-linecap="round"/>
+    <path d="M723 92l8 8M731 90l-8 8" stroke="#ffc96f" stroke-width="3" stroke-linecap="round"/>
+    <path d="M144 108v14M137 115h14" stroke="#f0a4a8" stroke-width="3" stroke-linecap="round"/>
+    <path d="M102 202v10M97 207h10" stroke="#f6c56d" stroke-width="3" stroke-linecap="round"/>
+  </g>
+
+  <!-- календарь -->
+  <g transform="translate(52 84)">
+    <rect x="0" y="18" width="106" height="96" rx="12" fill="#fff" stroke="#f1d2cd" stroke-width="3"/>
+    <path d="M0 43h106" stroke="#f3d7d2" stroke-width="3"/>
+    <path d="M20 7v22M86 7v22" stroke="#e9a7a2" stroke-width="7" stroke-linecap="round"/>
+    <path d="M19 63h18v18H19zM48 63h18v18H48zM77 63h13v18H77zM19 89h18v14H19zM48 89h18v14H48z" fill="#ffe4e1"/>
+    <path d="M48 63h18v18H48z" fill="#f3a6a8"/>
+    <path d="M75 89l7 7 13-14" fill="none" stroke="#6bb8a3" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+  </g>
+
+  <!-- пол -->
+  <path d="M0 372h800v148H0z" fill="#ffe0dc"/>
+  <ellipse cx="441" cy="463" rx="300" ry="28" fill="#e3a29e" opacity=".17" filter="url(#b)"/>
+
+  <!-- кресло -->
+  <g>
+    <rect x="486" y="398" width="170" height="40" rx="16" fill="#6fa9d6"/>
+    <rect x="626" y="258" width="42" height="164" rx="20" fill="#7bb4df"/>
+    <path d="M505 438v38M620 438v38" stroke="#9db8cc" stroke-width="9" stroke-linecap="round"/>
+    <path d="M512 395c29-7 80-8 119-2" stroke="#a7d3ee" stroke-width="4" stroke-linecap="round"/>
+  </g>
+
+  <!-- медсестра -->
+  <g>
+    <path d="M225 229c-22 35-28 97-23 154l5 64h48l9-107 33-78-20-47-52 14Z" fill="url(#scrub)"/>
+    <path d="M203 257c-16 39-23 91-20 132l5 58h31l13-88 13-69-42-33Z" fill="#fff" opacity=".94"/>
+    <path d="M260 257c14 35 21 83 18 127l-5 63h-30l-13-89-12-69 42-32Z" fill="#fff" opacity=".94"/>
+    <path d="M232 217h34v36h-34z" fill="#e8b695"/>
+    <ellipse cx="249" cy="189" rx="44" ry="47" fill="#efc3a3"/>
+    <path d="M205 186c1-37 19-61 44-61 27 0 43 25 43 60-9-21-23-34-42-39-17 12-30 27-45 40Z" fill="#4b332a"/>
+    <circle cx="213" cy="127" r="20" fill="#4b332a"/>
+    <circle cx="213" cy="127" r="10" fill="#5d4136"/>
+    <path d="M292 188c9 4 15 11 16 19-8 4-14 1-17-6" fill="#4b332a"/>
+    <circle cx="204" cy="192" r="8" fill="#efc3a3"/><circle cx="293" cy="192" r="8" fill="#efc3a3"/>
+    <g fill="#34363d"><ellipse cx="235" cy="189" rx="4" ry="4.8"/><ellipse cx="265" cy="189" rx="4" ry="4.8"/></g>
+    <path d="M225 180c4-3 9-3 13-1M259 179c4-2 9-2 13 1" stroke="#5c4134" stroke-width="2.4" stroke-linecap="round"/>
+    <path d="M242 204c5 4 13 4 18 0" stroke="#b96667" stroke-width="3.1" stroke-linecap="round"/><path d="M249 193v6" stroke="#d9a181" stroke-width="2.2" stroke-linecap="round"/>
+    <ellipse cx="222" cy="204" rx="7" ry="4" fill="#e89d99" opacity=".45"/><ellipse cx="277" cy="204" rx="7" ry="4" fill="#e89d99" opacity=".45"/>
+    <path d="M231 241v38c0 9-7 16-16 16s-16-7-16-16v-16" fill="none" stroke="#3a9d84" stroke-width="4"/>
+    <path d="M270 239v40c0 9 7 16 16 16s16-7 16-16v-18" fill="none" stroke="#3a9d84" stroke-width="4"/>
+    <circle cx="231" cy="240" r="5" fill="#f7fcfa" stroke="#3a9d84" stroke-width="3"/>
+    <path d="M219 291c-29 18-50 37-66 57" fill="none" stroke="#6dbca6" stroke-width="24" stroke-linecap="round"/>
+    <path d="M154 349c-10 7-16 16-16 25" fill="none" stroke="#efc3a3" stroke-width="15" stroke-linecap="round"/>
+    <path d="M137 365c-6 4-8 10-5 15 3 6 9 7 14 4 5-3 6-9 3-14" fill="#efc3a3"/>
+    <path d="M279 290c26 13 44 31 55 52" fill="none" stroke="#6dbca6" stroke-width="24" stroke-linecap="round"/>
+    <path d="M332 342c8 5 13 11 14 18" fill="none" stroke="#efc3a3" stroke-width="15" stroke-linecap="round"/>
+    <path d="M346 352c3 9 1 16-4 20-6 4-13 2-16-4-3-6-1-12 5-16" fill="#efc3a3"/>
+    <g transform="rotate(9 380 335)">
+      <rect x="365" y="315" width="34" height="48" rx="7" fill="#f8fcfa" stroke="#bcded4" stroke-width="2"/>
+      <rect x="370" y="309" width="24" height="10" rx="4" fill="#f0b45c"/>
+      <path d="M372 334h20M372 343h14" stroke="#8cc5b4" stroke-width="3" stroke-linecap="round"/>
+      <rect x="372" y="350" width="20" height="6" rx="3" fill="#c7e6dd"/>
+    </g>
+    <path d="M221 431h52M230 401h38" stroke="#fff" stroke-width="3" opacity=".45"/>
+    <rect x="259" y="246" width="20" height="26" rx="4" fill="#fff" opacity=".8"/>
+    <path d="M264 253h10M264 259h7" stroke="#7bb8a6" stroke-width="2" stroke-linecap="round"/>
+  </g>
+
+  <!-- мальчик -->
+  <g>
+    <path d="M535 375c-11 22-14 46-9 67" fill="none" stroke="#5b7fa5" stroke-width="30" stroke-linecap="round"/>
+    <path d="M584 375c12 22 16 44 12 65" fill="none" stroke="#5b7fa5" stroke-width="30" stroke-linecap="round"/>
+    <path d="M512 435c-3 10 2 18 12 21l30 4c9 1 14-4 12-12-1-8-9-13-21-14l-33 1Z" fill="#fff" stroke="#d0e2ef" stroke-width="3"/>
+    <path d="M583 430c4 9 1 17-8 20l-26 5c-8 1-13-4-12-11 1-7 7-12 18-14l28-10Z" fill="#fff" stroke="#d0e2ef" stroke-width="3"/>
+    <path d="M549 275c-16 5-30 14-40 26l31 20 19-20 12-23-22-3Z" fill="#f39a67"/>
+    <path d="M566 292c28-13 58-16 88-9 24 6 42 18 54 36l-16 69c-28 11-57 12-86 3-26-8-47-22-62-41l22-58Z" fill="#f39a67" opacity=".55"/>
+    <path d="M548 290c-4 17-2 31 5 42l19-37-24-5Z" fill="#efc3a3"/>
+    <path d="M564 268c7 9 18 14 30 14 13 0 25-6 32-16l-5-18h-51l-6 20Z" fill="#fff" opacity=".8"/>
+    <path d="M555 280c-11 20-17 39-17 58l2 49h44l17-66-19-47-27 6Z" fill="#f39a67"/>
+    <path d="M621 276c22 5 37 19 43 40l4 68h-47l-12-65 12-43Z" fill="#f39a67"/>
+    <path d="M632 270c10 3 16 9 18 17l-30 11-3-26 15-2Z" fill="#f39a67"/>
+    <!-- закатанный рукав и плечо -->
+    <path d="M613 284c13 2 24 9 30 20-10 11-24 13-38 6" fill="#f7ab7b"/>
+    <path d="M607 300c14 0 25 5 30 15" stroke="#f9bd95" stroke-width="5" stroke-linecap="round"/>
+    <path d="M594 314c20-3 36 4 45 20" fill="none" stroke="#efc3a3" stroke-width="23" stroke-linecap="round"/>
+    <path d="M632 334c9 6 14 13 15 22" fill="none" stroke="#efc3a3" stroke-width="17" stroke-linecap="round"/>
+    <path d="M626 350c-8 3-12 9-11 15 1 7 7 11 13 9 6-2 9-8 7-14" fill="#efc3a3"/>
+    <!-- пластырь -->
+    <g transform="rotate(-18 603 297)">
+      <rect x="585" y="288" width="38" height="18" rx="6" fill="#ffe38d" stroke="#efc96a" stroke-width="2"/>
+      <path d="M604 292l2.2 4.5 5 .7-3.6 3.5.8 4.9-4.4-2.3-4.4 2.3.8-4.9-3.6-3.5 5-.7 2.2-4.5Z" fill="#f08b94"/>
+    </g>
+    <!-- голова -->
+    <path d="M589 245h35v36h-35z" fill="#e8b695"/>
+    <ellipse cx="608" cy="214" rx="49" ry="51" fill="#efc3a3"/>
+    <path d="M561 210c1-39 20-64 47-64 29 0 46 26 47 63-9-22-24-37-45-42-18 13-32 29-49 43Z" fill="#5b412e"/>
+    <circle cx="569" cy="174" r="18" fill="#5b412e"/>
+    <circle cx="647" cy="172" r="17" fill="#5b412e"/>
+    <circle cx="558" cy="219" r="9" fill="#efc3a3"/><circle cx="658" cy="219" r="9" fill="#efc3a3"/>
+    <g fill="#34363d"><ellipse cx="592" cy="215" rx="4.4" ry="5.2"/><ellipse cx="626" cy="215" rx="4.4" ry="5.2"/></g>
+    <circle cx="593.5" cy="213.5" r="1.4" fill="#fff"/><circle cx="627.5" cy="213.5" r="1.4" fill="#fff"/>
+    <path d="M581 205c4-3 10-3 14-1M620 204c4-2 10-2 14 1" stroke="#604735" stroke-width="2.5" stroke-linecap="round"/>
+    <path d="M598 231c6 5 15 5 21 0" stroke="#b96667" stroke-width="3.4" stroke-linecap="round"/><path d="M609 220v7" stroke="#d9a181" stroke-width="2.3" stroke-linecap="round"/>
+    <ellipse cx="579" cy="231" rx="8" ry="4.5" fill="#e89d99" opacity=".5"/><ellipse cx="640" cy="231" rx="8" ry="4.5" fill="#e89d99" opacity=".5"/>
+    <path d="M551 332c-8 18-16 34-27 48" fill="none" stroke="#f39a67" stroke-width="25" stroke-linecap="round"/>
+    <path d="M524 380c-7 7-9 15-6 22" fill="none" stroke="#efc3a3" stroke-width="16" stroke-linecap="round"/>
+    <path d="M512 398c-5 7-4 14 2 18 6 4 13 1 16-5 2-5 0-10-5-14" fill="#efc3a3"/>
+    <path d="M550 432h48M562 403h36" stroke="#fff" stroke-width="3" opacity=".4"/>
+    <path d="M558 335c19-2 36 4 49 17" fill="none" stroke="#e98657" stroke-width="3" opacity=".5"/>
+  </g>
+
+  <!-- столик с наградой -->
+  <g>
+    <rect x="70" y="345" width="124" height="13" rx="6" fill="#f0c9b2"/>
+    <path d="M91 358v80M173 358v80" stroke="#d5a98f" stroke-width="8" stroke-linecap="round"/>
+    <rect x="104" y="319" width="56" height="29" rx="6" fill="#fff" stroke="#f0d0c5"/>
+    <path d="M117 329h30M117 337h20" stroke="#e5b6a6" stroke-width="3" stroke-linecap="round"/>
+    <circle cx="154" cy="324" r="10" fill="#ffd36e"/>
+    <path d="M154 318l1.6 3.5 3.8.5-2.8 2.7.7 3.8-3.3-1.8-3.3 1.8.7-3.8-2.8-2.7 3.8-.5 1.6-3.5Z" fill="#fff" opacity=".75"/>
+  </g>
+
+  <!-- конфетти -->
+  <g>
+    <rect x="371" y="101" width="11" height="22" rx="3" fill="#f5a3a9" transform="rotate(24 376 112)"/>
+    <rect x="431" y="77" width="10" height="20" rx="3" fill="#ffd36e" transform="rotate(-18 436 87)"/>
+    <circle cx="487" cy="121" r="6" fill="#82c9b4"/>
+    <circle cx="677" cy="285" r="5" fill="#f5a3a9"/>
+    <path d="M391 208l6 6M397 206l-6 6" stroke="#8bc9b5" stroke-width="3" stroke-linecap="round"/>
+    <path d="M705 342l7 7M712 340l-7 7" stroke="#ffc96f" stroke-width="3" stroke-linecap="round"/>
+  </g>
+</svg>

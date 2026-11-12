@@ -1,0 +1,161 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" role="img" aria-labelledby="t d">
+  <title id="t">Ребёнок дома во время простуды</title>
+  <desc id="d">Мальчик в тёплом пледе пьёт чай, рядом мама, на столике платки, градусник и лимон.</desc>
+  <defs>
+    <linearGradient id="wall" x1="0" y1="0" x2="0" y2="440" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#fff9ef"/><stop offset="1" stop-color="#f9edda"/>
+    </linearGradient>
+    <linearGradient id="floor" x1="0" y1="0" x2="0" y2="1">
+      <stop stop-color="#ead7bb"/><stop offset="1" stop-color="#ddc5a5"/>
+    </linearGradient>
+    <linearGradient id="window" x1="0" y1="0" x2="0" y2="1">
+      <stop stop-color="#9bb4c7"/><stop offset="1" stop-color="#c5d9e7"/>
+    </linearGradient>
+    <linearGradient id="blanket" x1="0" y1="0" x2="1" y2="1">
+      <stop stop-color="#efb0a8"/><stop offset="1" stop-color="#de8b89"/>
+    </linearGradient>
+    <filter id="sh" x="-30%" y="-30%" width="160%" height="160%"><feGaussianBlur stdDeviation="7"/></filter>
+  </defs>
+
+  <rect width="800" height="600" fill="url(#wall)"/>
+  <path d="M0 438h800v162H0z" fill="url(#floor)"/>
+  <path d="M0 438h800" stroke="#d8bf9f" stroke-width="3"/>
+  <path d="M0 480h800M120 438l-30 162M340 438l-6 162M560 438l11 162M710 438l30 162" stroke="#ddc4a4" stroke-width="2" opacity=".6"/>
+
+  <!-- окно с дождём -->
+  <g>
+    <rect x="588" y="53" width="172" height="224" rx="15" fill="#fff" stroke="#e3d6c2" stroke-width="4"/>
+    <rect x="599" y="64" width="150" height="202" rx="8" fill="url(#window)"/>
+    <path d="M674 64v202M599 165h150" stroke="#eef5f8" stroke-width="6"/>
+    <g stroke="#e6f2fa" stroke-width="3" stroke-linecap="round" opacity=".8">
+      <path d="M621 92l-8 20M646 116l-8 20M703 88l-8 20M724 135l-8 20M617 193l-8 20M664 214l-8 20M711 183l-8 20"/>
+    </g>
+    <path d="M610 236c18-8 35-8 50 0" stroke="#93b5aa" stroke-width="3" opacity=".6" fill="none"/>
+    <path d="M580 277h190v12H580z" fill="#dfc9ab"/>
+    <rect x="590" y="196" width="30" height="42" rx="5" fill="#e9b98e"/>
+    <path d="M612 196c-10 0-18-8-18-18 0-6 2-11 6-14 2 6 7 9 12 10 0 11-5 17-14 17" fill="#7eb58f"/>
+  </g>
+
+  <!-- лампа -->
+  <g>
+    <path d="M104 300V196" stroke="#b89a75" stroke-width="5"/>
+    <path d="M104 196c-22 0-38 14-38 32h76c0-18-16-32-38-32Z" fill="#f4c675"/>
+    <ellipse cx="104" cy="230" rx="31" ry="9" fill="#ffe3a4" opacity=".5"/>
+    <ellipse cx="104" cy="302" rx="30" ry="7" fill="#b89a75"/>
+    <path d="M74 306h60" stroke="#b89a75" stroke-width="4" stroke-linecap="round"/>
+  </g>
+
+  <!-- полка -->
+  <g>
+    <path d="M62 140h170v9H62z" fill="#ddc4a6"/>
+    <rect x="78" y="99" width="24" height="41" rx="4" fill="#f0a6a6"/>
+    <rect x="109" y="108" width="19" height="32" rx="4" fill="#9dd3c1"/>
+    <rect x="137" y="94" width="27" height="46" rx="4" fill="#ffd16f"/>
+    <path d="M192 140v-16c0-10 8-18 18-18s18 8 18 18v16" fill="#e7b58a"/>
+    <circle cx="210" cy="118" r="9" fill="#85c3a4"/>
+  </g>
+
+  <!-- диван -->
+  <g>
+    <ellipse cx="398" cy="500" rx="245" ry="27" fill="#b09270" opacity=".2" filter="url(#sh)"/>
+    <rect x="166" y="337" width="455" height="110" rx="28" fill="#81aabf"/>
+    <rect x="184" y="305" width="418" height="92" rx="26" fill="#90b9cc"/>
+    <rect x="150" y="366" width="54" height="124" rx="24" fill="#729bb0"/>
+    <rect x="608" y="366" width="54" height="124" rx="24" fill="#729bb0"/>
+    <path d="M197 333c90-12 187-13 285-3" stroke="#b7d4e0" stroke-width="4" stroke-linecap="round" opacity=".5"/>
+    <path d="M197 449v45M605 449v45" stroke="#7d7a6b" stroke-width="8" stroke-linecap="round"/>
+    <rect x="205" y="376" width="98" height="62" rx="14" fill="#f5d79f"/>
+    <rect x="520" y="381" width="88" height="57" rx="14" fill="#f1b6b1"/>
+  </g>
+
+  <!-- мама -->
+  <g>
+    <path d="M236 315c-16 31-22 75-18 116l4 47h38l6-76 21-58-18-40-33 11Z" fill="#9ac3b8"/>
+    <path d="M242 300h27v27h-27z" fill="#e8b695"/>
+    <ellipse cx="255" cy="277" rx="35" ry="38" fill="#efc3a3"/>
+    <path d="M221 274c1-30 15-48 36-48 22 0 34 19 35 47-7-17-18-27-34-31-14 9-24 21-37 32Z" fill="#704b34"/>
+    <circle cx="221" cy="254" r="14" fill="#704b34"/>
+    <circle cx="219" cy="283" r="7" fill="#efc3a3"/><circle cx="291" cy="283" r="7" fill="#efc3a3"/>
+    <g fill="#34363d"><ellipse cx="243" cy="278" rx="3.3" ry="3.9"/><ellipse cx="268" cy="278" rx="3.3" ry="3.9"/></g>
+    <path d="M236 271c3-2 7-2 10 0M263 270c3-2 7-2 10 0" stroke="#5e4230" stroke-width="2" stroke-linecap="round"/>
+    <path d="M249 291c4 3 9 3 13 0" stroke="#b96667" stroke-width="2.6" stroke-linecap="round"/>
+    <path d="M230 329c-9 14-10 30-5 46" fill="none" stroke="#9ac3b8" stroke-width="18" stroke-linecap="round"/>
+    <path d="M225 374c11 9 24 13 38 11" fill="none" stroke="#e8b695" stroke-width="14" stroke-linecap="round"/>
+    <path d="M268 325c22 5 38 15 48 30" fill="none" stroke="#9ac3b8" stroke-width="18" stroke-linecap="round"/>
+    <path d="M312 353c15 10 25 22 30 35" fill="none" stroke="#e8b695" stroke-width="14" stroke-linecap="round"/>
+    <path d="M339 384c3 8 0 14-5 17-6 3-12 0-14-6-1-5 2-9 7-12" fill="#e8b695"/>
+    <path d="M231 465h45M242 440h31" stroke="#fff" stroke-width="3" opacity=".3"/>
+  </g>
+
+  <!-- ребёнок -->
+  <g>
+    <path d="M377 327c-4 39 1 70 18 94 18 25 50 37 91 35 36-2 62-18 70-48l-8-75-171-6Z" fill="url(#blanket)"/>
+    <path d="M388 333c24 15 52 22 82 21 34-1 61-10 79-27" fill="none" stroke="#f6cfc6" stroke-width="5" opacity=".55"/>
+    <path d="M397 382h136M393 405h145M402 428h124" stroke="#d67d7c" stroke-width="3" opacity=".45" stroke-linecap="round"/>
+    <path d="M483 331c9 18 11 36 5 53" fill="none" stroke="#f6cfc6" stroke-width="4" opacity=".55"/>
+    <path d="M487 302c8 10 20 15 33 15 14 0 26-6 34-16l-5-18h-56l-6 19Z" fill="#fff" opacity=".8"/>
+    <path d="M510 273h30v31h-30z" fill="#e8b695"/>
+    <ellipse cx="525" cy="247" rx="41" ry="44" fill="#efc3a3"/>
+    <path d="M485 244c1-34 17-55 41-55 25 0 39 22 40 54-8-19-21-31-38-35-16 11-28 24-43 36Z" fill="#65432f"/>
+    <circle cx="488" cy="220" r="15" fill="#65432f"/><circle cx="562" cy="219" r="14" fill="#65432f"/>
+    <circle cx="484" cy="253" r="7" fill="#efc3a3"/><circle cx="565" cy="253" r="7" fill="#efc3a3"/>
+    <g fill="#34363d"><ellipse cx="512" cy="247" rx="3.7" ry="4.3"/><ellipse cx="539" cy="247" rx="3.7" ry="4.3"/></g>
+    <path d="M504 240c3-2 7-2 10 0M532 239c3-2 7-2 10 0" stroke="#604735" stroke-width="2" stroke-linecap="round"/>
+    <path d="M519 261c4 3 10 3 14 0" stroke="#b96667" stroke-width="2.8" stroke-linecap="round"/><path d="M526 251v5" stroke="#d9a181" stroke-width="2" stroke-linecap="round"/>
+    <ellipse cx="501" cy="261" rx="8" ry="4.5" fill="#e89d99" opacity=".45"/><ellipse cx="551" cy="261" rx="8" ry="4.5" fill="#e89d99" opacity=".45"/>
+    <path d="M525 309c1 17-1 31-6 43" fill="none" stroke="#efc3a3" stroke-width="13" stroke-linecap="round"/>
+    <path d="M501 342c10-1 18-5 23-11" fill="none" stroke="#efc3a3" stroke-width="13" stroke-linecap="round"/>
+    <path d="M563 333c-10 5-22 7-34 6" fill="none" stroke="#efc3a3" stroke-width="13" stroke-linecap="round"/>
+    <!-- кружка -->
+    <g>
+      <path d="M496 373h56v36c0 13-11 24-25 24h-6c-14 0-25-11-25-24v-36Z" fill="#fff" stroke="#e0cbb0" stroke-width="3"/>
+      <path d="M552 383c12 0 20 8 20 17s-8 17-20 17" fill="none" stroke="#e0cbb0" stroke-width="5"/>
+      <path d="M508 389h20M508 397h14" stroke="#f0b7a7" stroke-width="4" stroke-linecap="round" opacity=".7"/>
+      <path d="M511 359c-5-10 3-16 0-25M526 356c-5-10 3-16 0-25M541 359c-5-10 3-16 0-25" fill="none" stroke="#d9c4ad" stroke-width="3" stroke-linecap="round" opacity=".8"/>
+    </g>
+    <!-- плюшевый мишка -->
+    <g transform="translate(585 365)">
+      <circle cx="24" cy="20" r="19" fill="#c9986b"/>
+      <circle cx="9" cy="7" r="8" fill="#c9986b"/><circle cx="39" cy="7" r="8" fill="#c9986b"/>
+      <circle cx="18" cy="20" r="2.3" fill="#46362a"/><circle cx="30" cy="20" r="2.3" fill="#46362a"/>
+      <ellipse cx="24" cy="28" rx="6" ry="4.5" fill="#e6c39c"/>
+      <path d="M21 27c2 2 4 2 6 0" stroke="#7d5b3f" stroke-width="1.7" stroke-linecap="round"/>
+      <ellipse cx="24" cy="51" rx="21" ry="23" fill="#d8ab7e"/>
+      <path d="M4 45c-8 5-10 13-6 19M44 45c8 5 10 13 6 19" fill="none" stroke="#c9986b" stroke-width="8" stroke-linecap="round"/>
+    </g>
+  </g>
+
+  <!-- столик -->
+  <g>
+    <ellipse cx="682" cy="497" rx="83" ry="13" fill="#b09270" opacity=".2" filter="url(#sh)"/>
+    <rect x="618" y="387" width="130" height="12" rx="6" fill="#efd3ae"/>
+    <path d="M646 399v90M720 399v90" stroke="#c7a881" stroke-width="6" stroke-linecap="round"/>
+    <rect x="631" y="348" width="64" height="39" rx="7" fill="#f7f1e6" stroke="#e0cdb3" stroke-width="3"/>
+    <path d="M641 362c9-5 18-6 27-2 7-6 16-7 24-2" fill="none" stroke="#d7a9a3" stroke-width="3" stroke-linecap="round"/>
+    <path d="M642 371h42" stroke="#d9e3e7" stroke-width="3" stroke-linecap="round"/>
+    <circle cx="720" cy="374" r="16" fill="#f3e4c8" stroke="#dec7a5" stroke-width="3"/>
+    <circle cx="720" cy="374" r="9" fill="#e8dcbf"/>
+    <path d="M718 349v18" stroke="#8ba8b7" stroke-width="4" stroke-linecap="round"/>
+    <path d="M713 349h10" stroke="#8ba8b7" stroke-width="4" stroke-linecap="round"/>
+    <path d="M652 336c24-5 48-4 70 2" stroke="#fff" stroke-width="3" stroke-linecap="round" opacity=".5"/>
+    <!-- лимон -->
+    <ellipse cx="617" cy="377" rx="20" ry="14" fill="#f4d25e"/>
+    <path d="M598 377c4-7 12-11 20-11" stroke="#e9c243" stroke-width="3" fill="none"/>
+    <circle cx="612" cy="375" r="3" fill="#fff3b8" opacity=".8"/>
+    <!-- мёд -->
+    <rect x="678" y="326" width="25" height="32" rx="5" fill="#f2bd5e" stroke="#dfa841"/>
+    <rect x="683" y="320" width="15" height="9" rx="3" fill="#c99235"/>
+  </g>
+
+  <!-- носовой платок -->
+  <g>
+    <path d="M374 477c22-11 45-9 62 5-8 18-26 27-49 23-8-2-13-11-13-28Z" fill="#fff" stroke="#dbe8f0" stroke-width="3"/>
+    <path d="M388 484c9-4 17-3 24 2M382 494c6-2 11-1 16 2" stroke="#c9dce7" stroke-width="2.5" stroke-linecap="round"/>
+  </g>
+
+  <g>
+    <circle cx="352" cy="102" r="4" fill="#efb2a8"/>
+    <path d="M416 86v11M410.5 91.5h11" stroke="#e9b98e" stroke-width="3" stroke-linecap="round"/>
+    <path d="M724 300v10M719 305h10" stroke="#efb2a8" stroke-width="3" stroke-linecap="round" opacity=".7"/>
+  </g>
+</svg>
